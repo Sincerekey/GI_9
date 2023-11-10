@@ -1,5 +1,6 @@
 # GI_9
 # Budget Tracker Application
+## Usage
 
 ## Overview
 Budget Tracker to help users manage their income and expenses, providing a clear view of their financial situation and suggesting a recommended weekly budget.
