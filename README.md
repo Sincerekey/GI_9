@@ -14,10 +14,6 @@ Budget Tracker to help users manage their income and expenses, providing a clear
 - **Dynamic Summary Display:** Displays the calculated income, expenses, and total budget, updating in real-time with each new entry.
 - 
 - **Stylish Design:** Styling is implemented using SASS.
-- 
-## Getting Started
-1. Clone the repository to your local machine.
-2. Open `index.html` in your preferred web browser.
 
 ## Usage
 1. **Adding Income:**
