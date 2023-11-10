@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+	<link href="styles.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0">
+	<link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+	<main>
+		<section id="header">
+			<h1>Budget Tracker</h1>
+		</section>
+		<section id="buttons">
+<!-- Section for adding income -->
+			<section id="incomeSect">
+				<button id="addIncome">
+					Click to Add Income
+				</button>
+				<label for="grossInc">Gross Monthly Income:</label>
+				<span>$<input  name="grossInc" id="grossInc" readonly placeholder="0"></span>
+				<ol id="list">
+				</ol>
+			</section>
+<!-- Section for adding expenses -->
+			<section id="expenseSect">
+				<button id="addExpense">
+					Click to Add Expenses
+				</button>
+				<label for="grossInc">Gross Monthly Expenses:</label>
+				<span>$<input  name="grossExp" id="grossExp" readonly placeholder="0"></span>
+				<ol id="elist">
+				</ol>
+			</section>
+		</section>
+ <!-- Budget section for displaying net income, calculating weekly budget, and displaying the result -->
+		<section id="budgetSect">
+			<label for="totIncome">Net Income:</label>
+			<span>$<input name="Income" id="totIncome" readonly placeholder="0"></span>
+			<button id="calcBudget">Calculate Weekly Budget</button>
+			<ol id="tlist">
+			</ol>
+			<h2 id="weekBudget"></h2>
+		</section>
+   
+ <!-- Popup section for adding Income -->
+	<section id="incomePopup" class="popup">
+		<section class="popup-content" id="ipop">
+            <label for="income">Income Amount</label>
+            <input type="number" required id="income">
+			<label for="incomeDecription">Decription</label>
+            <input  id="incomeDecription">
+            <button type="button" id="incenter">Enter</button>
+			<button id="closeincomePopup">
+				Click to Close
+			</button>
+		</section>
+	</section>
+ <!-- Popup section for adding Expenses -->
+	<section id="expensePopup" class="popup">
+		<section id="epop" class="popup-content" >
+            <label for="expenses">Expenses Amount</label>
+            <input type="number" required id="expenses">
+			<label for="expenseDecription">Decription</label>
+            <input  id="expenseDecription">
+            <button type="button" id="expenter">Enter</button>
+			<button id="closeexpensePopup">
+				Click to Close
+			</button>
+		</section>
+	</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>

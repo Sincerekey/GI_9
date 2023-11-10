@@ -1,0 +1,204 @@
+// Define color variables
+$primary: #6363ceaf;
+$secondary: #ff9d30;
+$background_color: #637ecec1;
+$button_color: #61cbcb9c;
+@mixin gradient {
+    background: linear-gradient(to bottom, #ff9d30, #6363ceaf);
+}
+// Apply styles to the HTML element
+html {
+    background-color: $primary;
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 2rem;
+}
+
+// Styling for the header section
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px black solid;
+    margin-bottom: 2%;
+}
+
+// Styling for popups
+.popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.7s;
+    display: none;
+    // Apply margin to specific child elements
+    :nth-child(1), :nth-child(2), :nth-child(3), :nth-child(4), :nth-child(5), :nth-child(6) {
+        margin-bottom: 2%;
+    }
+    button {
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        padding: 2px;
+        padding: 1%;
+    }
+}
+
+// Styling for popup content
+.popup-content {
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888888;
+    width: 30%;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 0.7s;
+}
+
+// Styling for specific income popup 
+#ipop {
+    background-color: rgba(9, 194, 9, 0.85);
+    border-radius: 15%;
+    input {
+        border: none;
+        border-bottom: 1px black solid;
+        background-color: rgba(177, 239, 177, 0.987);
+    }
+    button {
+        background-color: rgba(177, 239, 177, 0.987);
+    }
+}
+#incomePopup{
+    transition: 0.7s;
+    animation: fadeEffect 1s;
+  }
+// Styling for specific expense popup 
+#epop {
+    background-color: rgba(255, 0, 0, 0.85);
+    border-radius: 15%;
+    input {
+        border: none;
+        border-bottom: 1px black solid;
+        background-color: rgba(253, 104, 104, 0.719);
+    }
+    button {
+        background-color: rgba(253, 104, 104, 0.719);
+    }
+}
+#expensePopup{
+    transition: 0.7s;
+    animation: fadeEffect 1s;
+  }
+// Styling for buttons within popups
+.popup-content button {
+    display: block;
+    margin: 0 auto;
+}
+
+// Display the popup with class "show"
+.show {
+    transition: 0.7s;
+    display: block;
+}
+
+// Styling for Income and Expenses sections 
+#incomeSect, #expenseSect {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: flex-start;
+    input {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    label {
+        margin-top: 5%;
+    }
+}
+
+// Styling for all headings
+h1, h2, h3, h4, h5, h6 {
+    margin: 2%;
+}
+
+// Styling for the Add Income and Expenses buttons
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    button {
+        padding: 2%;
+
+
+    }
+}
+
+// Styling for all buttons
+button {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 2px;
+    padding: 0.6%;
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+button:hover{transform: scale(1.1);
+    transition: 0.7s;}
+// Styling for all inputs
+input {
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 1.2rem;
+    background-color: $background_color;
+    border: none;
+    border-bottom: 1px black solid;
+
+}
+
+// Styling for the budget section
+#budgetSect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    li {
+        border-bottom: 1px black solid;
+    }
+    input {
+        margin-bottom: 1%;
+        color: black;
+
+        
+    }
+}
+
+// Styling color for specific buttons 
+#addIncome {
+    background-color: rgba(3, 250, 3, 0.52);
+}
+
+#addExpense {
+    background-color: rgba(255, 0, 0, 0.719);
+}
+
+#calcBudget {
+    @include gradient;}
+/* Keyframes for fade effect */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+ol{
+ transition: 0.7s;
+ animation: fadeEffect 1s;
+ li{
+    transition: 0.7s;
+    animation: fadeEffect 1s;
+ }
+}
