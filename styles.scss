@@ -188,7 +188,9 @@ input {
 }
 
 #calcBudget {
-    @include gradient;}
+@include gradient;
+margin-top: .6%;
+}
 /* Keyframes for fade effect */
 @keyframes fadeEffect {
     from {opacity: 0;}

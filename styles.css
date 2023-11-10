@@ -169,6 +169,7 @@ input {
 
 #calcBudget {
   background: linear-gradient(to bottom, #ff9d30, rgba(99, 99, 206, 0.6862745098));
+  margin-top: 0.6%;
 }
 
 /* Keyframes for fade effect */
